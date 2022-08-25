@@ -1,0 +1,28 @@
+
+plugins {
+   id 'java'
+   id 'maven-publish'
+}
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+repositories {
+   mavenCentral()
+   mavenLocal()
+}
+
+dependencies {
+   implementation 'org.apache.commons:commons-lang3:3.12.0'
+   implementation 'org.slf4j:slf4j-api:1.7.36'
+   implementation 'org.slf4j:slf4j-simple:1.7.36'
+   testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
+}
+
+test {
+   useJUnitPlatform()
+   testLogging {
+      events "passed", "skipped", "failed"
+   }
+}
+

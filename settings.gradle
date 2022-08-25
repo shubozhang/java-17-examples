@@ -19,3 +19,6 @@ project(":web-server-demo").projectDir = new File("examples/web-server-demo")
 
 include "jce-demo"
 project(":jce-demo").projectDir = new File("examples/jce-demo")
+
+include "misc"
+project(":misc").projectDir = new File("examples/misc")

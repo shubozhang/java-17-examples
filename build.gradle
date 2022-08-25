@@ -22,17 +22,17 @@ subprojects {
         }
     }
 
-    tasks.withType(JavaCompile) {
-        options.compilerArgs += "--enable-preview"
-    }
-
-    tasks.withType(Test) {
-        jvmArgs += "--enable-preview"
-    }
-
-    tasks.withType(JavaExec) {
-        jvmArgs += '--enable-preview'
-    }
+//    tasks.withType(JavaCompile) {
+//        options.compilerArgs += "--enable-preview"
+//    }
+//
+//    tasks.withType(Test) {
+//        jvmArgs += "--enable-preview"
+//    }
+//
+//    tasks.withType(JavaExec) {
+//        jvmArgs += '--enable-preview'
+//    }
 
 }
 
@@ -44,3 +44,4 @@ project(':proxy-server') {}
 project(':entropy-demo') {}
 project(':web-server-demo') {}
 project(':jce-demo') {}
+project(':misc') {}
